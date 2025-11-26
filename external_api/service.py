@@ -5,7 +5,7 @@ from .config import settings
 class HumorService:
     def __init__(self):
         self.api_key = settings.humor_api_key
-        self.base_url = "https://api.humorapi.com"
+        self.base_url = "https://lr-7-9.onrender.com"
 
     async def get_joke(self) -> JokeModel:
         url = f"{self.base_url}/jokes/random"
